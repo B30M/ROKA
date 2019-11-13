@@ -1,9 +1,9 @@
 <HTML><HEAD><TITLE>DDDR</TITLE>
   
-<script language="javascript">
+<%script language="javascript"%>
 <!--  
 var count=0;
-function hint(form) {
+function hint(count.value) {
 count++;
 if (count.value > 4) {
 alert("힌트 사용")
@@ -51,7 +51,5 @@ alert("패스워드가 틀립니다.")
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
 <p>힌트 : 2자리</p>
-<form name="hintForm">
-<input type="button" value="테스트" onClick="hint(that.form)" style="font-weight:bolder; font-size:4mm;">
-</form>
+<input type="button" value="테스트" onClick="hint(count.value)" style="font-weight:bolder; font-size:4mm;">
 </BODY></HTML>
