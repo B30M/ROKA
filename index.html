@@ -6,7 +6,7 @@ function login_page(form) {
 count++;
 if (count > 4) {
 alert("힌트 해제");
-}
+} 
 }
 </script>
 
@@ -16,8 +16,8 @@ function test() {
 if {
 alert("포스터를 잘 보세요.");
 location.reload(true);
-} 
-}
+} else {
+alert("힌트")
 </script>
   
 <script language="javascript">
@@ -25,7 +25,9 @@ location.reload(true);
 function login_page(form) {
 if (form.pass.value=="dddr") { 
 location="http://i3errine.github.io/dddr/" 
-} 
+} else {
+alert("패스워드가 틀립니다.");
+ }
 } 
 </script>
  
@@ -46,6 +48,6 @@ location="http://i3errine.github.io/dddr/"
 </form>
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
-<p>힌트 : 1자리</p>
+<p>힌트 : 3자리</p>
   
 </BODY></HTML>
