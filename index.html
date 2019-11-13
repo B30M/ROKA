@@ -6,7 +6,9 @@ function login_page(form) {
 count++;
 if (count > 4) {
 alert("힌트 해제");
-} 
+$('#Button').prop('disabled', false)
+} else {$('#Button').prop('disabled', true)
+}
 }
 </script>
 
@@ -16,9 +18,7 @@ function test() {
 if {
 alert("포스터를 잘 보세요.");
 location.reload(true);
-} else {
-alert("힌트 잠금")
-}
+} 
 </script>
   
 <script language="javascript">
@@ -26,9 +26,7 @@ alert("힌트 잠금")
 function login_page(form) {
 if (form.pass.value=="dddr") { 
 location="http://i3errine.github.io/dddr/" 
-} else {
-alert("패스워드가 틀립니다.");
- }
+} 
 } 
 </script>
  
