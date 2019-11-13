@@ -14,8 +14,10 @@ location.reload(true);
 <script language="javascript">
 <!--
 function test() {
-alert("포스터를 잘 보세요.")
-}
+if (count > 4) {
+alert("포스터를 잘 보세요.");
+} else (count < 4) {
+alert("힌트 ")
 </script>
   
 <script language="javascript">
@@ -23,7 +25,7 @@ alert("포스터를 잘 보세요.")
 function login_page(form) {
 if (form.pass.value=="dddr") { 
 location="http://i3errine.github.io/dddr/" 
-} else (count =< 4) {
+} else (count < 4) {
 alert("패스워드가 틀립니다.");
  }
 } 
