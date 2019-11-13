@@ -1,25 +1,21 @@
 <HTML><HEAD><TITLE>DDDR</TITLE>
   
-<%script language="javascript"%>
+<script language="javascript">
 <!--  
 var count=0;
-function hint(count.value) {
+function hint(value) {
 count++;
 if (count.value > 4) {
 alert("힌트 사용")
 } else {
 alert(count+"회 클릭")
 } 
-</script>
   
-<script language="javascript">
 <!--
 function test() {
 alert("포스터를 잘 보세요.")
 }
-</script>
-
-<script language="javascript">
+  
 <!--
 function login_page(form) {
 //원하는 패스워드를 설정
@@ -51,5 +47,5 @@ alert("패스워드가 틀립니다.")
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
 <p>힌트 : 2자리</p>
-<input type="button" value="테스트" onClick="hint(count.value)" style="font-weight:bolder; font-size:4mm;">
+<input type="button" value="테스트" onClick="hint(value)" style="font-weight:bolder; font-size:4mm;">
 </BODY></HTML>
