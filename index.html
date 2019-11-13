@@ -5,7 +5,14 @@ var count=0;
 function login_page(form) {
 count++;
 if (count > 4) {
-alert("힌트 사용")
+function login_page(form) {
+  var x = document.getElementById("확인");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 }
 }
 </script>
