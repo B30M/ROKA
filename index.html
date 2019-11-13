@@ -6,7 +6,7 @@ function login_page(form) {
 count++;
 if (count > 4) {
 function login_page(form) {
-  var x = document.getElementById("확인");
+  var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -56,5 +56,18 @@ alert("패스워드가 틀립니다.")
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
 <p>힌트 : 3자리</p>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;}
+  </style>
+  
+<div id="myDIV">
 <input type="button" value="테스트" onClick="hint()" style="font-weight:bolder; font-size:4mm;">
+</div>
 </BODY></HTML>
