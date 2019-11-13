@@ -4,7 +4,7 @@
 var count=0;
 function login_page(form) {
 count++;
-if (count = 5) {
+if (count > 4) {
 alert("힌트 해제")
 }
 }
@@ -22,7 +22,7 @@ alert("포스터를 잘 보세요.")
 function login_page(form) {
 if (form.pass.value=="dddr") { 
 location="http://i3errine.github.io/dddr/" 
-} else (count < 5) {
+} else (count =< 4) {
 alert("패스워드가 틀립니다.")
  }
 } 
@@ -46,6 +46,6 @@ alert("패스워드가 틀립니다.")
 </form>
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
-<p>힌트 : 1자리</p>
+<p>힌트 : 2자리</p>
 <input type="button" value="테스트" onClick="hint()" style="font-weight:bolder; font-size:4mm;">
 </BODY></HTML>
