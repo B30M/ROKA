@@ -6,7 +6,8 @@ function login_page(form) {
 count++;
 if (count > 4) {
 alert("힌트 해제");
-}
+location.reload(true);
+} 
 }
 </script>
 
@@ -23,7 +24,7 @@ function login_page(form) {
 if (form.pass.value=="dddr") { 
 location="http://i3errine.github.io/dddr/" 
 } else (count =< 4) {
-alert("패스워드가 틀립니다.")
+alert("패스워드가 틀립니다.");
  }
 } 
 </script>
