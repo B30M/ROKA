@@ -6,18 +6,26 @@ function login_page(form) {
 count++;
 if (count > 4) {
 alert("힌트 해제");
-} 
+} else {
+alert("패스워드가 틀립니다.");
+ }
 }
 </script>
 
 <script language="javascript">
 <!--
+var count=0;
+function login_page(form) {
+count++;
 function test() {
-if {
+if (count > 4){
 alert("포스터를 잘 보세요.");
 location.reload(true);
-} else {
-alert("힌트")
+} else (count =< 4){
+alert("힌트 잠금")
+}
+}
+}
 </script>
   
 <script language="javascript">
