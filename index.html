@@ -3,9 +3,12 @@
 <script language="javascript">
 <!--  
 var count=0;
-function login_page(form) {
+function hint(count) {
 count++;
-alert(count+"회 클릭")
+alert(count+"회 클릭");
+if (count.value<"5") {
+alert("힌트 사용")
+}
 } 
 </script>
   
@@ -24,7 +27,7 @@ if (form.pass.value=="dddr") {
 //패스워드가 일치하면 이동할 문서의 경로
 location="http://i3errine.github.io/dddr/" 
 } else {
-
+alert("패스워드가 틀립니다.")
 }
 }
 </script>
@@ -48,5 +51,5 @@ location="http://i3errine.github.io/dddr/"
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
 <p>힌트 : 0자리</p>
-<input type="button" value="테스트" onClick="hint()" style="font-weight:bolder; font-size:4mm;">
+<input type="button" value="테스트" onClick="hint(count)" style="font-weight:bolder; font-size:4mm;">
 </BODY></HTML>
