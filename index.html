@@ -4,8 +4,18 @@
 var count=0;
 function login_page(form) {
 count++;
-if (count > 4) {
-show onClick="hint()"
+}
+</script>  
+
+<script language="javascript">  
+function login_page(form) { if (count > 4) {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 }
 }
 </script>
@@ -24,8 +34,6 @@ function login_page(form) {
 if (form.pass.value=="dddr") { 
 //패스워드가 일치하면 이동할 문서의 경로
 location="http://i3errine.github.io/dddr/" 
-} else {
-
 }
 }
 </script>
@@ -48,6 +56,19 @@ location="http://i3errine.github.io/dddr/"
 </form>
 <br><br>
 <input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
-<p>힌트 : 0자리</p>
+<p>힌트 : 1자리</p>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: 20px;}
+  </style>
+  
+<div id="myDIV">
 <input type="button" value="테스트" onClick="hint()" style="font-weight:bolder; font-size:4mm;">
+</div>
 </BODY></HTML>
