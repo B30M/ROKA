@@ -5,7 +5,8 @@ var count=0;
 function login_page(form) {
 count++;
 if (count > 4) {
-alert("힌트 해제")
+alert("힌트 해제");
+location.reload(true);
 } 
 }
 </script>
@@ -14,7 +15,6 @@ alert("힌트 해제")
 <!--
 function test() {
 alert("포스터를 잘 보세요.");
-location.reload(true);
 }
 </script>
   
@@ -23,7 +23,7 @@ location.reload(true);
 function login_page(form) {
 if (form.pass.value=="dddr") { 
 location="http://i3errine.github.io/dddr/" 
-} 
+}
 } 
 </script>
  
