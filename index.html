@@ -1,5 +1,13 @@
 <HTML><HEAD><TITLE>DDDR</TITLE>
 
+<script>
+function numberMaxLength(e){
+if(e.value.length > e.maxLength){
+e.value = e.value.slice(10, e.maxLength);
+}
+}
+</script>
+  
 <script language="javascript">
 <!--  
 var count=0;
@@ -25,7 +33,7 @@ if (form.pass.value=="dddr") {
 location="http://i3errine.github.io/dddr/" 
 } else {
 alert("패스워드가 틀립니다.")
-location.reload(true);
+
 }
 }
 </script>
