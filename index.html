@@ -1,0 +1,43 @@
+<HTML><HEAD><TITLE>DDDR</TITLE>
+
+<script language="javascript">
+<!--
+function test() {
+alert("포스터를 잘 보세요.")
+}
+</script>
+
+<script language="javascript">
+<!--
+function login_page(form) {
+//원하는 패스워드를 설정
+if (form.pass.value=="dddr") { 
+//패스워드가 일치하면 이동할 문서의 경로
+location="http://i3errine.github.io/dddr/" 
+} else {
+alert("패스워드가 틀립니다.")
+location.reload(true);
+}
+}
+</script>
+
+</HEAD>
+
+<div style="width:550px; height:100px; float:left;">
+<img src="https://user-images.githubusercontent.com/57560642/68744525-25c7ae80-0638-11ea-8653-28b355152f4d.png"/>
+<img src="https://user-images.githubusercontent.com/57560642/68744710-94a50780-0638-11ea-8448-763e7dd41708.png"/>
+</div>
+  
+<body>
+<br><br><br><br>
+<p align="left">
+보물을 얻고 싶다면, 비밀번호를 입력하십시오.</p>
+<form name="loginForm">
+<p style="margin-bottom:20;"> 비밀번호
+<input name="pass" type="password" size="12"> 
+<input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
+</form>
+<br><br>
+<input type="button" value="힌 트" onClick="test()" style="font-weight:bolder; font-size:4mm;">
+<p>힌트 : 0자리</p>
+</BODY></HTML>
