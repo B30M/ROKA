@@ -7,13 +7,14 @@ count++;
 if (count > 4) {
 
   var btn;
-  function login_page(form) {
+  function act() {
   btn = document.getElementById('btn');
   btn.disabled = false;
   }
  alert("힌트 해제");
+
  }
- test();
+
 }
 </script>
 
@@ -43,11 +44,14 @@ location="http://i3errine.github.io/dddr/"
  
 <body>
 <br> <br> <br> <br> <br> <br> <br> <br>
+
 <p align="left">보물을 얻고 싶다면, 비밀번호를 입력하십시오.</p>
 <form name="loginForm">
 <p style="margin-bottom:20;"> 비밀번호
 <input name="pass" type="password" size="12">
-<input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
+<input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;">
+<input type="button" value="활성화" onClick="act()" style="font-weight:bolder; font-size:4mm;"> <BR>
+<p>힌트 : 4자리</p>
 </form>
 <br><br>
 <input type="button" id="btn" value="힌 트" disabled="true" onClick="test()" style="font-weight:bolder; font-size:4mm;">
