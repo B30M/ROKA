@@ -6,13 +6,12 @@ function login_page(form) {
 count++;
 if (count = 5) {
 
+  alert("힌트 해제");
   var btn;
   function btn_on() {
   btn = document.getElementById('btn');
   btn.disabled = false;
   }
- alert("힌트 해제");
-
  } else {
    btn.disabled = true;
  }
