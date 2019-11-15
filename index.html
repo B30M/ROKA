@@ -2,27 +2,31 @@
   
 <script language="javascript">
 var count=0;
-function login_page() {
+function btn_on() {
 count++;
 if (count > 4) {
- alert("힌트 활성화")
- document.getElementById("btn").disabled = false;
- }
+alert("힌트 해제");
+document.getElementById('btn').disabled = false;
 }
+}
+</script>
 
+<script language="javascript">lo
+<!--
+function test() {
+alert("포스터를 잘 보세요.");
+location.reload();
+}
+</script>
+  
+<script language="javascript">
+<!--
 function login_page(form) {
 if (form.pass.value=="dddr") { 
 alert("축하합니다.")
 location="http://i3errine.github.io/dddr/" 
 } else {
-alert("패스워드가 틀렸습니다."}
-}
-</script>
-
-<script language="javascript">
-function test() {
-alert("포스터를 잘 보세요.");
-location.reload();
+alert("패스워드가 틀립니다.")}
 }
 </script>
  
@@ -39,10 +43,11 @@ location.reload();
 <form name="loginForm">
 <p style="margin-bottom:20;"> 비밀번호
 <input name="pass" type="password" size="12">
-<input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;"><BR>
+<input type="button" value="확 인" onClick="login_page(this.form)" style="font-weight:bolder; font-size:4mm;">
+<input type="button" value="활성화" onClick="btn_on()" style="font-weight:bolder; font-size:4mm;"> <BR>
 </form>
 <br><br>
 <input type="button" id="btn" value="힌 트" disabled="true" onClick="test()" style="font-weight:bolder; font-size:4mm;">
-<p>힌트 : 4자리</p>
+<p>힌트 : 5자리</p>
   
 </BODY></HTML>
