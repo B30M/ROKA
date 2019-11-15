@@ -1,13 +1,20 @@
 <HTML><HEAD><TITLE>DDDR</TITLE>
   
 <script language="javascript">
+var count=0;
 function login_page(form) {
-var count = 0;
 count++;
 if (count > 4) {
  alert("힌트 활성화")
  document.getElementById("btn").disabled = false;
  }
+}
+
+function login_page(form) {
+if (form.pass.value=="dddr") { 
+alert("축하합니다.")
+location="http://i3errine.github.io/dddr/" 
+}
 }
 </script>
 
@@ -15,15 +22,6 @@ if (count > 4) {
 function test() {
 alert("포스터를 잘 보세요.");
 location.reload();
-}
-</script>
-  
-<script language="javascript">
-function login_page(form) {
-if (form.pass.value=="dddr") { 
-alert("축하합니다.")
-location="http://i3errine.github.io/dddr/" 
-}
 }
 </script>
  
